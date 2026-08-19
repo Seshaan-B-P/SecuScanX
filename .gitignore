@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+dist-electron/
+out/
+build/
+
+# Logs & Environment
+*.log
+.env
+.env.local
+.env.*.local
+.DS_Store
+Thumbs.db
