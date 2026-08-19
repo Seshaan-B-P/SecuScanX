@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 
 import Dashboard from './pages/Dashboard';
@@ -96,7 +96,7 @@ export default function App() {
   };
 
   return (
-    <BrowserRouter>
+    <Router>
       <MainLayout
         onStartScan={handleStartScan}
         isAdmin={isAdmin}
@@ -119,6 +119,6 @@ export default function App() {
           <Route path="/settings" element={<SettingsPage isDemoMode={isDemoMode} setIsDemoMode={setIsDemoMode} />} />
         </Routes>
       </MainLayout>
-    </BrowserRouter>
+    </Router>
   );
 }
